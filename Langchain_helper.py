@@ -1,17 +1,17 @@
 
 import vertexai
 from vertexai.language_models import TextGenerationModel
-from langchain.llms import VertexAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SimpleSequentialChain
 from langchain.chains import SequentialChain
+from langchain_community.llms import VertexAI
 import os
 
 
 os.environ["GOOGLE_CLOUD_PROJECT"] = "fair-gist-408904"
 os.environ["REGION_NAME"] = "us-central1"  # If applicable
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\Users\\sawoo\\OneDrive\\Desktop\\Python\\fair-gist-408904-39e58583a4e9.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\Users\\sawoo\\OneDrive\\Desktop\\Python\\fair-gist-408904-a23ea1a2e727.json"
 
 llm = VertexAI(
     model_name="text-bison",
