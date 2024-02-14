@@ -8,6 +8,7 @@ from langchain.chains import SimpleSequentialChain
 from langchain.chains import SequentialChain
 import os
 
+
 os.environ["GOOGLE_CLOUD_PROJECT"] = "fair-gist-408904"
 os.environ["REGION_NAME"] = "us-central1"  # If applicable
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\Users\\sawoo\\OneDrive\\Desktop\\Python\\fair-gist-408904-39e58583a4e9.json"
